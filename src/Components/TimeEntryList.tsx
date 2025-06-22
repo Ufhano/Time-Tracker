@@ -6,9 +6,18 @@ interface TimeEntryListProps{
 
 }
 
-export default function TimeEntryList({entries}:TimeEntryListProps){
+export default function TimeEntryList({entries,onDelete,onEdit}:TimeEntryListProps){
+    const[editingId,setEditingId]=useState<string|null>(null);
+    const[editTask,setEditTask]=useState("");
+    const[editHours,setEditHours]=useState("");
     const totalHours =entries.reduce((sum, entry)=> sum+entry.hours,0);
-
+    
+    const startEdit=(entry:TimeEntry)=>{
+        setEditingId(entry.id);
+        setEditTask(entry.task);
+        setEditHours(entry.hours.toString());
+        
+    }
     return(
         <div>
             <h2>Time Entries</h2>
