@@ -1,6 +1,7 @@
 import{useState} from 'react';
 import TimeEntryForm from './Components/TimeEntryForm';
-import { TimeEntry } from './Components/types/timeEntry';
+import type { TimeEntry } from './types/timeEntry';
+
 import './App.css';
 
 
@@ -19,6 +20,7 @@ function App(){
   return(
     <div className="App">
       <h1>Mini Time Tracker</h1>
+      <TimeEntryForm onAdd={handleAddEntry}/>
     </div>
   )
 }
