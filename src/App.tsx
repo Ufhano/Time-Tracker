@@ -1,12 +1,10 @@
-import { useState } from 'react';
-import './App.css'
+import{useState} from 'react';
+import TimeEntryForm from './Components/TimeEntryForm';
+import { TimeEntry } from './Components/types/timeEntry';
+import './App.css';
+
 
 function App(){
-  return (
-    <div className="App">
-      <h1>Mini Time Tracker</h1>
-    </div>
-  );
+  const[entries, setEntries] =useState<TimeEntry[]>([]);
+  
 }
-
-export default App;
