@@ -2,6 +2,7 @@ import type {TimeEntry} from "../types/timeEntry";
 interface TimeEntryListProps{
     entries:TimeEntry[];
     onDelete:(id:string)=>void;
+    onEdit:(id:string,updatedTask:string,updatedHours:number)=>void;
 
 }
 
