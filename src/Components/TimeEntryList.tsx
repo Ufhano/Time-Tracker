@@ -1,6 +1,7 @@
 import type {TimeEntry} from "../types/timeEntry";
 interface TimeEntryListProps{
     entries:TimeEntry[];
+    onDelete:(id:string)=>void;
 
 }
 
