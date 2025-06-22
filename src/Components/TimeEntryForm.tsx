@@ -18,6 +18,26 @@ export default function TimeEntryForm({ onAdd}: TimeEntryFormProps){
             alert("this task name can't be empty");
             return;
         }
+        if(isNaN(parsedHours) || parsedHours <=0{
+            alert("please enter a valid number of hours");
+            return;
+        }
+
+        onAdd(task,parsedHours);
+
+        setTask("")
+        setHours("")
+
+    };
+
+    return(
+        <form onSubmit={handleSubmit}>
+            <input
+            type="text"
+            placeholder="Task name"
+            
+        </form>
+    )
 
         
     }
