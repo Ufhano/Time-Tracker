@@ -48,10 +48,7 @@ export default function TimeEntryForm({ onAdd}: TimeEntryFormProps){
         step="0.1"
         required
       />
-
-        
-    )
-
-        
-    }
+ <button type="submit">Add Entry</button>
+    </form>
+  );
 }
