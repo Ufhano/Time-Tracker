@@ -5,5 +5,4 @@ Users can add, edit, and delete time entries with a summary of total hours worke
 
  Live Demo
 
-🔗 [View the live app on Vercel](time-tracker-khf84c937-ufhanos-projects.vercel.app)  
-
+🔗 time-tracker-khaki-ten.vercel.app
