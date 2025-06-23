@@ -5,4 +5,5 @@ Users can add, edit, and delete time entries with a summary of total hours worke
 
  Live Demo
 
-🔗 time-tracker-khaki-ten.vercel.app
+🔗 [time-tracker-khaki-ten.vercel.app](https://time-tracker-khaki-ten.vercel.app
+)
